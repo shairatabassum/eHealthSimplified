@@ -9,7 +9,7 @@
     <include
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        layout="@layout/doctorprofile" />
+        layout="@layout/registration_doctor" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

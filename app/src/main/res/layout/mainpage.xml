@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/mp_topcover"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"/>
+    <TextView
+        android:id="@+id/mp_apptitle"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mp_topcover"
+        app:layout_constraintBottom_toBottomOf="@id/mp_topcover"
+        android:drawableStart="@drawable/ic_applogo"
+        android:text=" eHealthSimplified"/>
+    <Button
+        android:id="@+id/mp_finddoc_btn"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginTop="150dp"
+        android:layout_width="0dp"
+        android:padding="15dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.92"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:gravity="left|center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableStart="@drawable/ic_perm_identity_24dp"
+        android:drawablePadding="15dp"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_24dp"
+        android:text="Find Doctor"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/mp_findpharmacy_btn"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:padding="15dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.92"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:gravity="left|center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mp_finddoc_btn"
+        android:drawableStart="@drawable/ic_add_shopping_cart_24dp"
+        android:drawablePadding="15dp"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_24dp"
+        android:text="Find Pharmacy"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/mp_reg_btn"
+        android:stateListAnimator="@null"
+        android:textColor="@color/white"
+        android:background="@color/green"
+        android:layout_marginTop="100dp"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.85"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mp_findpharmacy_btn"
+        android:text="Registration"/>
+    <Button
+        android:id="@+id/mp_login_btn"
+        android:stateListAnimator="@null"
+        android:textColor="@color/green"
+        android:background="@drawable/greenborder"
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.85"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mp_reg_btn"
+        android:text="Login"/>
+    <TextView
+        android:id="@+id/mp_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms of Use"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mp_login_btn"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/mp_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mp_terms"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

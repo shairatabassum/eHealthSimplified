@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">eHealthSimplified</string>
+    
+    <string-array name="hospitals">
+        <item>Apollo Hospital</item>
+        <item>Popular Specialized Hospital Ltd.</item>
+        <item>Ibn Sina Hospitals</item>
+        <item>Bangladesh Eye Hospital</item>
+        <item>Eastern Hospital and Medical Research Centre</item>
+        <item>Medinova Medical Services Ltd.</item>
+        <item>Shaheed Monsur Ali Medical College Hospital</item>
+    </string-array>
 </resources>
