@@ -26,7 +26,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="@id/rd_topcover"
-            android:drawableStart="@drawable/ic_arrow_back_black_24dp"
+            android:drawableStart="@drawable/ic_arrow_back_white_24dp"
             android:drawablePadding="25dp"
             android:text="Doctor Registration"
             android:textAllCaps="false"/>
@@ -278,7 +278,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/rd_academicrecord"
             android:textColor="@color/green"
-            android:drawableStart="@drawable/ic_add_circle_outline_24dp"
+            android:drawableStart="@drawable/ic_add_circle_outline_green_24dp"
             android:textStyle="bold"
             android:textSize="17sp"/>
 
@@ -356,7 +356,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/rd_affiliationrecord"
             android:textColor="@color/green"
-            android:drawableStart="@drawable/ic_add_circle_outline_24dp"
+            android:drawableStart="@drawable/ic_add_circle_outline_green_24dp"
             android:textStyle="bold"
             android:textSize="17sp"/>
         <TextView

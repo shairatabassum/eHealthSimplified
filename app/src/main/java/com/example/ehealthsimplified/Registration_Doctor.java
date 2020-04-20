@@ -3,7 +3,6 @@ package com.example.ehealthsimplified;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.TimePickerDialog;
-import android.app.DialogFragment;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;

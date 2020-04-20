@@ -44,9 +44,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:drawableStart="@drawable/ic_perm_identity_24dp"
+        android:drawableStart="@drawable/ic_perm_identity_orange_24dp"
         android:drawablePadding="15dp"
-        android:drawableEnd="@drawable/ic_keyboard_arrow_right_24dp"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
         android:text="Find Doctor"
         android:textAllCaps="false"/>
     <Button
@@ -64,9 +64,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/mp_finddoc_btn"
-        android:drawableStart="@drawable/ic_add_shopping_cart_24dp"
+        android:drawableStart="@drawable/ic_add_shopping_cart_orange_24dp"
         android:drawablePadding="15dp"
-        android:drawableEnd="@drawable/ic_keyboard_arrow_right_24dp"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
         android:text="Find Pharmacy"
         android:textAllCaps="false"/>
     <Button

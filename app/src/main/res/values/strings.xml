@@ -1,7 +1,20 @@
 <resources>
     <string name="app_name">eHealthSimplified</string>
-    
+
+    <string-array name="specialities">
+        <item>All</item>
+        <item>Child Doctor</item>
+        <item>Internal Medicine (General Physician)</item>
+        <item>Radiologist</item>
+        <item>Urologist</item>
+        <item>Neuro Surgeon</item>
+        <item>Cancer Specialist</item>
+        <item>Respiratory Specialist</item>
+        <item>Cardiologist</item>
+    </string-array>
+
     <string-array name="hospitals">
+        <item>All</item>
         <item>Apollo Hospital</item>
         <item>Popular Specialized Hospital Ltd.</item>
         <item>Ibn Sina Hospitals</item>
@@ -9,5 +22,30 @@
         <item>Eastern Hospital and Medical Research Centre</item>
         <item>Medinova Medical Services Ltd.</item>
         <item>Shaheed Monsur Ali Medical College Hospital</item>
+    </string-array>
+
+    <string-array name="locations">
+        <item>All</item>
+        <item>Dhaka</item>
+        <item>Chittagong</item>
+        <item>Sylhet</item>
+        <item>Barisal</item>
+        <item>Rajshahi</item>
+        <item>Jessore</item>
+        <item>Khulna</item>
+    </string-array>
+
+    <string-array name="fees">
+        <item>All</item>
+        <item>$</item>
+        <item>$$</item>
+        <item>$$$</item>
+    </string-array>
+
+    <string-array name="ratings">
+        <item>All</item>
+        <item>Rate</item>
+        <item>Popularity</item>
+        <item>Fees</item>
     </string-array>
 </resources>
