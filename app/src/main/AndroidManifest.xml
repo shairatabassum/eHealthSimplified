@@ -9,11 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Appointment_patient_main"></activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Appointment_doctor_main" />
+        <activity android:name=".Appointment_patient_main" />
+        <activity android:name=".FindDoctor_main" />
         <activity android:name=".Registration_Doctor" />
         <activity android:name=".AppointmentRequest" />
-        <activity android:name=".FindDoctor_main">
+        <activity
+            android:name=".Homepage_patient"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -7,6 +7,8 @@
     <color name="green">#8ab24a</color>
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
+    <color name="darkgray3">#838383</color>
+    <color name="darkgray2">#9c9c9c</color>
     <color name="darkgray">#a9a9a9</color>
     <color name="gray">#c0c0c0</color>
     <color name="lightgray">#e5e5e5</color>

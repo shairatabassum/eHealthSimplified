@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 
 public class FindDoctor_main extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
@@ -27,7 +28,7 @@ public class FindDoctor_main extends AppCompatActivity implements AdapterView.On
         finddoctorlist.setAdapter(new FindDoctor_adapter(docnamelist, educationlist, locationlist));
 
         //filter dialog
-        Button filterbutton = findViewById(R.id.fd_filter);
+        ImageView filterbutton = findViewById(R.id.fd_filter);
         filterbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,12 +41,11 @@ public class FindDoctor_main extends AppCompatActivity implements AdapterView.On
         LayoutInflater inflater = LayoutInflater.from(FindDoctor_main.this);
         View view = inflater.inflate(R.layout.finddoctor_filter, null);
 
-        Button applybtn = view.findViewById(R.id.fd_filter_apply_btn);
+        final Button applybtn = view.findViewById(R.id.fd_filter_apply_btn);
         Button resetbtn = view.findViewById(R.id.fd_filter_reset_btn);
         applybtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
             }
         });
         resetbtn.setOnClickListener(new View.OnClickListener() {
