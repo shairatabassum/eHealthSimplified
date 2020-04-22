@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingTop="10dp"
@@ -9,15 +10,22 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/ap_profilepic"
-        android:padding="10dp"
+        android:padding="5dp"
         android:layout_marginTop="5dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/doctor" />
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/doctor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ap_infolayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ap_line"/>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:id="@+id/ap_infolayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/ap_profilepic"
+        app:layout_constraintTop_toTopOf="parent">
         <TextView
             android:id="@+id/ap_docname"
             android:layout_width="match_parent"
@@ -25,8 +33,7 @@
             android:text="Prof. Dr. Anisur Rahman"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="15sp"
-            android:drawableEnd="@drawable/ic_keyboard_arrow_right_grey_20dp"/>
+            android:textSize="15sp" />
         <TextView
             android:id="@+id/ap_time"
             android:layout_width="wrap_content"
@@ -89,4 +96,14 @@
                 android:textSize="12sp"/>
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+    <View
+        android:id="@+id/ap_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ap_infolayout"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

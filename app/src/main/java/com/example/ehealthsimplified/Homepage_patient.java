@@ -17,7 +17,7 @@ public class Homepage_patient extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_patient_container);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbarpatient);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         toolbar.setTitle("");

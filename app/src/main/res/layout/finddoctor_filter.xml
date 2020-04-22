@@ -168,7 +168,7 @@
             android:stateListAnimator="@null"
             android:text="Apply"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="17sp" />
 
         <Button
             android:id="@+id/fd_filter_reset_btn"
@@ -180,7 +180,7 @@
             android:stateListAnimator="@null"
             android:text="Reset"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="17sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

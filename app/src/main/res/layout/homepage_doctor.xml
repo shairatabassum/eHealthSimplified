@@ -5,19 +5,29 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbardoctor"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@null"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_constraintTop_toTopOf="parent"
+            android:elevation="4dp"/>
 
         <LinearLayout
-            android:id="@+id/mp_topcover"
+            android:id="@+id/hpd_topcover"
             android:background="@color/orange"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             app:layout_constraintTop_toTopOf="parent"
             android:orientation="vertical"/>
         <TextView
-            android:id="@+id/mp_apptitle"
+            android:id="@+id/hpd_apptitle"
             android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,76 +35,27 @@
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/mp_topcover"
-            app:layout_constraintBottom_toBottomOf="@id/mp_topcover"
+            app:layout_constraintTop_toTopOf="@id/hpd_topcover"
+            app:layout_constraintBottom_toBottomOf="@id/hpd_topcover"
             android:drawableStart="@drawable/ic_applogo"
             android:text=" eHealthSimplified"/>
-        <Button
-            android:id="@+id/mp_finddoc_btn"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:layout_marginTop="150dp"
-            android:layout_width="0dp"
-            android:padding="15dp"
-            app:layout_constraintWidth_default="percent"
-            app:layout_constraintWidth_percent="0.92"
-            android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:gravity="left|center_vertical"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:drawableStart="@drawable/ic_perm_identity_orange_24dp"
-            android:drawablePadding="15dp"
-            android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
-            android:text="Find Doctor"
-            android:textAllCaps="false"/>
-        <Button
-            android:id="@+id/mp_emergency_btn"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:layout_marginTop="10dp"
-            android:layout_width="0dp"
-            android:padding="15dp"
-            app:layout_constraintWidth_default="percent"
-            app:layout_constraintWidth_percent="0.92"
-            android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:gravity="left|center_vertical"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/mp_finddoc_btn"
-            android:drawableStart="@drawable/ic_warning_orange_30dp"
-            android:drawablePadding="15dp"
-            android:drawableEnd="@drawable/ic_keyboard_arrow_right_gray_24dp"
-            android:text="Emergency Consultancy"
-            android:textAllCaps="false"/>
-
-        <View
-            android:id="@+id/mp_emptyspace"
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            app:layout_constraintTop_toBottomOf="@id/mp_emergency_btn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
 
         <GridLayout
-            android:id="@+id/mp_grid"
+            android:id="@+id/hpd_grid"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:alignmentMode="alignMargins"
             android:layout_margin="10dp"
-            app:layout_constraintTop_toBottomOf="@id/mp_emptyspace"
-            android:rowCount="1"
-            android:columnCount="3">
+            app:layout_constraintTop_toBottomOf="@id/hpd_topcover"
+            android:rowCount="2"
+            android:columnCount="2">
             <androidx.cardview.widget.CardView
-                android:id="@+id/mp_card1"
+                android:id="@+id/hpd_card1"
                 android:layout_margin="5dp"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:elevation="5dp"
                 app:cardCornerRadius="10dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1">
@@ -103,32 +64,30 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp">
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/mp_card1_avatar"
+                        android:id="@+id/hpd_card1_avatar"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        android:src="@drawable/mp_card1"/>
+                        android:src="@drawable/hpd_card1"/>
                     <TextView
-                        android:id="@+id/mp_card1_text"
+                        android:id="@+id/hpp_card1_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/mp_card1_avatar"
-                        android:text="Doctor\nRegistration"
-                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@id/hpd_card1_avatar"
+                        android:text="List of Doctors"
                         android:textColor="@color/darkgray3"
                         android:textSize="16sp"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
-                android:id="@+id/mp_card2"
+                android:id="@+id/hpd_card2"
                 android:layout_margin="5dp"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:elevation="5dp"
                 app:cardCornerRadius="10dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1">
@@ -137,32 +96,30 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp">
                     <ImageView
-                        android:id="@+id/mp_card2_avatar"
+                        android:id="@+id/hpd_card2_avatar"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        android:src="@drawable/mp_card2"/>
+                        android:src="@drawable/hpd_card2"/>
                     <TextView
                         android:id="@+id/hpd_card2_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/mp_card2_avatar"
-                        android:text="Patient\nRegistration"
-                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@id/hpd_card2_avatar"
+                        android:text="Patients"
                         android:textColor="@color/darkgray3"
                         android:textSize="16sp"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
-                android:id="@+id/mp_card3"
+                android:id="@+id/hpd_card3"
                 android:layout_margin="5dp"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:elevation="5dp"
                 app:cardCornerRadius="10dp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1">
@@ -171,52 +128,57 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp">
                     <ImageView
-                        android:id="@+id/mp_card3_avatar"
+                        android:id="@+id/hpd_card3_avatar"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:layout_marginTop="20dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        android:src="@drawable/mp_card3"/>
+                        android:src="@drawable/hpd_card3"/>
                     <TextView
-                        android:id="@+id/hpd_card3_text"
+                        android:id="@+id/hpp_card3_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/mp_card3_avatar"
-                        android:text="Login"
-                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@id/hpd_card3_avatar"
+                        android:text="Appointments"
+                        android:textColor="@color/darkgray3"
+                        android:textSize="16sp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/hpd_card4"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:id="@+id/hpd_card4_avatar"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/hpd_card4"/>
+                    <TextView
+                        android:id="@+id/hpd_card4_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/hpd_card4_avatar"
+                        android:text="Reviews"
                         android:textColor="@color/darkgray3"
                         android:textSize="16sp"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
         </GridLayout>
-
-        <TextView
-            android:id="@+id/mp_terms"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Terms of Use"
-            android:layout_marginTop="30dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/mp_grid"
-            android:textColor="@color/black"
-            android:textSize="15sp"/>
-        <TextView
-            android:id="@+id/mp_policy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Privacy Policy"
-            android:layout_marginTop="20dp"
-            android:paddingBottom="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/mp_terms"
-            android:textColor="@color/black"
-            android:textSize="15sp"/>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
