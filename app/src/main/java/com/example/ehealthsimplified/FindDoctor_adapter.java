@@ -3,6 +3,7 @@ package com.example.ehealthsimplified;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,8 +12,10 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class FindDoctor_adapter extends RecyclerView.Adapter<FindDoctor_adapter.FindDoctor_ViewHolder> {
     private String[] docnamelist, educationlist, locationlist;
-    public FindDoctor_adapter(String[] docnamelist, String[] educationlist, String[] locationlist) {
+    private Integer[] ratinglist;
+    public FindDoctor_adapter(String[] docnamelist, Integer[] ratinglist, String[] educationlist, String[] locationlist) {
         this.docnamelist=docnamelist;
+        this.ratinglist=ratinglist;
         this.educationlist=educationlist;
         this.locationlist=locationlist;
     }
@@ -39,6 +42,7 @@ public class FindDoctor_adapter extends RecyclerView.Adapter<FindDoctor_adapter.
             holder.profilepic.setImageResource(R.drawable.doctor5);
 
         holder.docname.setText(docnamelist[position]);
+        holder.rating.setRating(ratinglist[position]);
         holder.education.setText(educationlist[position]);
         holder.location.setText(locationlist[position]);
     }
@@ -51,10 +55,12 @@ public class FindDoctor_adapter extends RecyclerView.Adapter<FindDoctor_adapter.
     public class FindDoctor_ViewHolder extends RecyclerView.ViewHolder{
         CircleImageView profilepic;
         TextView docname, education, location;
+        RatingBar rating;
         public FindDoctor_ViewHolder(View itemView) {
             super(itemView);
-            profilepic = (de.hdodenhof.circleimageview.CircleImageView) itemView.findViewById(R.id.fd_profilepic);
+            profilepic = (CircleImageView) itemView.findViewById(R.id.fd_profilepic);
             docname = (TextView) itemView.findViewById(R.id.fd_docname);
+            rating = (RatingBar) itemView.findViewById(R.id.fd_ratingbar);
             education = (TextView) itemView.findViewById(R.id.fd_education);
             location = (TextView) itemView.findViewById(R.id.fd_location);
         }

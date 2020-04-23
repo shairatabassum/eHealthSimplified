@@ -23,9 +23,10 @@ public class FindDoctor_main extends AppCompatActivity implements AdapterView.On
         RecyclerView finddoctorlist = (RecyclerView) findViewById(R.id.fd_recyclercontainer);
         finddoctorlist.setLayoutManager(new LinearLayoutManager(FindDoctor_main.this));
         String[] docnamelist = {"Dr. Tasmiah Shifa", "Dr. Krishna Mohan Sahu", "Dr. A.K.M Fazlul Haque", "Dr. Abdul Mannan Sarker", "Dr. Abu Sayeed Mohammad Iqbal"};
+        Integer[] ratinglist = {5,4,3,2,1};
         String[] educationlist = {"MBBS", "MBBS, MD (Med.), DNB (Nephrology), DM (Nephrology), Fellowship (Nephrology) Canada", "MBBS, FRCS (UK)", "MBBS, DEM (DU), MD (Endocrinology)", "MBBS, FCPS, MD, Fellow (Singapore), Neonatal Training in Singapore"};
         String[] locationlist = {"Plot 15, Road 71, Gulshan, United Hospital, Dhaka-1212", "Plot 15, Road 71, Gulshan, United Hospital, Dhaka-1212", "Plot 15, Road 71, Gulshan, United Hospital, Dhaka-1212", "Plot 15, Road 71, Gulshan, United Hospital, Dhaka-1212", "Plot 15, Road 71, Gulshan, United Hospital, Dhaka-1212"};
-        finddoctorlist.setAdapter(new FindDoctor_adapter(docnamelist, educationlist, locationlist));
+        finddoctorlist.setAdapter(new FindDoctor_adapter(docnamelist, ratinglist, educationlist, locationlist));
 
         //filter dialog
         ImageView filterbutton = findViewById(R.id.fd_filter);

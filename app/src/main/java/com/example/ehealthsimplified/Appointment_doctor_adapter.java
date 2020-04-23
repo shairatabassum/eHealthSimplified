@@ -85,7 +85,7 @@ public class Appointment_doctor_adapter extends RecyclerView.Adapter<Appointment
 
         public appointment_doctor_ViewHolder(View itemView) {
             super(itemView);
-            profilepic = (de.hdodenhof.circleimageview.CircleImageView) itemView.findViewById(R.id.ad_profilepic);
+            profilepic = (CircleImageView) itemView.findViewById(R.id.ad_profilepic);
             patientname = (TextView) itemView.findViewById(R.id.ad_patientname);
             time = (TextView) itemView.findViewById(R.id.ad_time);
             date = (TextView) itemView.findViewById(R.id.ad_date);

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dr_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:src="@drawable/patient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/dr_ratingbar"
+        app:layout_constraintBottom_toTopOf="@id/dr_review" />
+    <TextView
+        android:id="@+id/dr_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rahima Begum"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/dr_pic"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="15sp" />
+    <RatingBar
+        android:id="@+id/dr_ratingbar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="3"
+        android:progressTint="@color/orange"
+        app:layout_constraintStart_toEndOf="@id/dr_pic"
+        app:layout_constraintTop_toBottomOf="@id/dr_name"
+        android:isIndicator="true" />
+    <TextView
+        android:id="@+id/dr_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23 April, 2020"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/dr_pic"
+        app:layout_constraintTop_toBottomOf="@id/dr_ratingbar"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/dr_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="fill_horizontal"
+        android:text="He explains exactly what is wrong and how we are going to repair. I sincerely trust him, his medical knowledge and his judgment. The entire staff is friendly and makes you feel at ease even through some not-so-easy time."
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dr_pic"
+        android:textSize="12sp"/>
+
+    <View
+        android:id="@+id/dr_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dr_review"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

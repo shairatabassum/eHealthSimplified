@@ -104,6 +104,8 @@
             app:layout_constraintTop_toBottomOf="@id/dp_education"
             android:scaleX="2"
             android:scaleY="2"
+            android:rating="4"
+            android:progressTint="@color/white"
             android:numStars="5"
             android:stepSize="0.1"
             android:isIndicator="true" />
