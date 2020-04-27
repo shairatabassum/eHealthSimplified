@@ -24,7 +24,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/dr_pic"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="15sp" />
+        android:textSize="14sp" />
     <RatingBar
         android:id="@+id/dr_ratingbar"
         style="?android:attr/ratingBarStyleSmall"
@@ -47,7 +47,7 @@
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@id/dr_pic"
         app:layout_constraintTop_toBottomOf="@id/dr_ratingbar"
-        android:textSize="12sp"/>
+        android:textSize="11sp"/>
     <TextView
         android:id="@+id/dr_review"
         android:layout_width="wrap_content"

@@ -80,7 +80,7 @@
                         app:layout_constraintTop_toBottomOf="@id/hpd_card1_avatar"
                         android:text="List of Doctors"
                         android:textColor="@color/darkgray3"
-                        android:textSize="16sp"/>
+                        android:textSize="13sp"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -112,7 +112,7 @@
                         app:layout_constraintTop_toBottomOf="@id/hpd_card2_avatar"
                         android:text="Patients"
                         android:textColor="@color/darkgray3"
-                        android:textSize="16sp"/>
+                        android:textSize="13sp"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -144,7 +144,7 @@
                         app:layout_constraintTop_toBottomOf="@id/hpd_card3_avatar"
                         android:text="Appointments"
                         android:textColor="@color/darkgray3"
-                        android:textSize="16sp"/>
+                        android:textSize="13sp"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -176,7 +176,7 @@
                         app:layout_constraintTop_toBottomOf="@id/hpd_card4_avatar"
                         android:text="Reviews"
                         android:textColor="@color/darkgray3"
-                        android:textSize="16sp"/>
+                        android:textSize="13sp"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
         </GridLayout>

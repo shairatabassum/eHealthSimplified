@@ -3,15 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingTop="10dp"
-    android:paddingBottom="5dp"
-    android:orientation="horizontal">
+    android:layout_height="wrap_content">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/ap_profilepic"
         android:padding="5dp"
-        android:layout_marginTop="5dp"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:src="@drawable/doctor"
@@ -21,10 +17,11 @@
         app:layout_constraintBottom_toTopOf="@id/ap_line"/>
     <LinearLayout
         android:id="@+id/ap_infolayout"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintStart_toEndOf="@id/ap_profilepic"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <TextView
             android:id="@+id/ap_docname"
@@ -33,21 +30,21 @@
             android:text="Prof. Dr. Anisur Rahman"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="15sp" />
+            android:textSize="14sp" />
         <TextView
             android:id="@+id/ap_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Appointment: 4:00 PM - 4:30 PM 23 April, 2020"
             android:textColor="@color/black"
-            android:textSize="12sp"/>
+            android:textSize="11sp"/>
         <TextView
             android:id="@+id/ap_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Plot 15, Road 71, Gulshan, United Hospital, Dhaka-1212"
             android:textColor="@color/black"
-            android:textSize="12sp"/>
+            android:textSize="11sp"/>
         <TextView
             android:id="@+id/ap_showmap"
             android:layout_width="wrap_content"
@@ -57,7 +54,7 @@
             android:textColor="@color/orange"
             android:drawableStart="@drawable/ic_location_on_black_orange_24dp"
             android:drawablePadding="3dp"
-            android:textSize="12sp"/>
+            android:textSize="11sp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,9 +67,9 @@
                 android:layout_weight="1"
                 android:text="Start Video Consultation"
                 android:textColor="@color/green"
-                android:drawableStart="@drawable/ic_video_call_green_30dp"
+                android:drawableStart="@drawable/ic_video_call_green_24dp"
                 android:drawablePadding="3dp"
-                android:textSize="12sp"/>
+                android:textSize="10sp"/>
             <TextView
                 android:id="@+id/ap_chat"
                 android:layout_width="match_parent"
@@ -81,19 +78,19 @@
                 android:layout_marginLeft="10dp"
                 android:text="Send a Message"
                 android:textColor="@color/green"
-                android:drawableStart="@drawable/ic_message_green_22dp"
+                android:drawableStart="@drawable/ic_message_green_20dp"
                 android:drawablePadding="3dp"
-                android:textSize="12sp"/>
+                android:textSize="10sp"/>
             <TextView
                 android:id="@+id/ap_cancel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Cancel Appointment"
+                android:text="Cancel\nAppointment"
                 android:textColor="#FF0000"
-                android:drawableStart="@drawable/ic_cancel_red_24dp"
+                android:drawableStart="@drawable/ic_cancel_red_20dp"
                 android:drawablePadding="3dp"
-                android:textSize="12sp"/>
+                android:textSize="10sp"/>
         </LinearLayout>
     </LinearLayout>
     <View

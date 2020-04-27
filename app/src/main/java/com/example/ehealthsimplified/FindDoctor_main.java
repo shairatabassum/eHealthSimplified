@@ -64,7 +64,7 @@ public class FindDoctor_main extends AppCompatActivity implements AdapterView.On
         //spinner - specialists
         Spinner spinnerspecialist = view.findViewById(R.id.fd_filter_specialist);
         ArrayAdapter<CharSequence> adapterspecialist = ArrayAdapter.createFromResource(FindDoctor_main.this,
-                R.array.specialities, android.R.layout.simple_spinner_item);
+                R.array.specialities, R.layout.spinner_item);
         adapterspecialist.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerspecialist.setAdapter(adapterspecialist);
         spinnerspecialist.setOnItemSelectedListener(FindDoctor_main.this);
@@ -72,7 +72,7 @@ public class FindDoctor_main extends AppCompatActivity implements AdapterView.On
         //spinner - hospitals and medical centers
         Spinner spinnerorg = view.findViewById(R.id.fd_filter_org);
         ArrayAdapter<CharSequence> adapterorg = ArrayAdapter.createFromResource(FindDoctor_main.this,
-                R.array.hospitals, android.R.layout.simple_spinner_item);
+                R.array.hospitals, R.layout.spinner_item);
         adapterorg.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerorg.setAdapter(adapterorg);
         spinnerorg.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) FindDoctor_main.this);
@@ -80,7 +80,7 @@ public class FindDoctor_main extends AppCompatActivity implements AdapterView.On
         //spinner - location
         Spinner spinnerlocation = view.findViewById(R.id.fd_filter_location);
         ArrayAdapter<CharSequence> adapterlocation = ArrayAdapter.createFromResource(FindDoctor_main.this,
-                R.array.locations, android.R.layout.simple_spinner_item);
+                R.array.locations, R.layout.spinner_item);
         adapterlocation.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerlocation.setAdapter(adapterlocation);
         spinnerlocation.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) FindDoctor_main.this);
@@ -88,7 +88,7 @@ public class FindDoctor_main extends AppCompatActivity implements AdapterView.On
         //spinner - fees
         Spinner spinnerfees = view.findViewById(R.id.fd_filter_fees);
         ArrayAdapter<CharSequence> adapterfees = ArrayAdapter.createFromResource(FindDoctor_main.this,
-                R.array.fees, android.R.layout.simple_spinner_item);
+                R.array.fees, R.layout.spinner_item);
         adapterfees.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerfees.setAdapter(adapterfees);
         spinnerfees.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) FindDoctor_main.this);
@@ -96,7 +96,7 @@ public class FindDoctor_main extends AppCompatActivity implements AdapterView.On
         //spinner - rating
         Spinner spinnerrating = view.findViewById(R.id.fd_filter_rating);
         ArrayAdapter<CharSequence> adapterrating = ArrayAdapter.createFromResource(FindDoctor_main.this,
-                R.array.ratings, android.R.layout.simple_spinner_item);
+                R.array.ratings, R.layout.spinner_item);
         adapterrating.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerrating.setAdapter(adapterrating);
         spinnerrating.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) FindDoctor_main.this);

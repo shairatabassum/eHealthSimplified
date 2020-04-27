@@ -22,7 +22,7 @@
         android:text="Prof. Dr. Anisur Rahman"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:textSize="15sp"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@id/fd_profilepic"
         app:layout_constraintTop_toTopOf="parent" />
     <RatingBar
@@ -40,22 +40,24 @@
         android:isIndicator="true" />
     <TextView
         android:id="@+id/fd_education"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="MBBS (DMC), M.Sc (Canada), FCPS (Surgery), FRCS (Glasgow, UK)"
+        android:text="MBBS (DMC), M.Sc (Canada),  M.Sc (Canada), FCPS (Surgery), FRCS (Glasgow, UK)"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@id/fd_profilepic"
         app:layout_constraintTop_toBottomOf="@id/fd_ratingbar"
-        android:textSize="12sp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="11sp"/>
     <TextView
         android:id="@+id/fd_location"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Plot 15, Road 71, Gulshan, United Hospital, Dhaka-1212"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@id/fd_profilepic"
         app:layout_constraintTop_toBottomOf="@id/fd_education"
-        android:textSize="12sp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="11sp"/>
     <TextView
         android:id="@+id/fd_showmap"
         android:layout_width="wrap_content"
@@ -66,7 +68,7 @@
         android:drawablePadding="3dp"
         app:layout_constraintStart_toEndOf="@id/fd_profilepic"
         app:layout_constraintTop_toBottomOf="@id/fd_location"
-        android:textSize="12sp"/>
+        android:textSize="11sp"/>
 
     <View
         android:id="@+id/fd_line"

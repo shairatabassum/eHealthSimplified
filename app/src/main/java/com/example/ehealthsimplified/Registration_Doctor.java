@@ -54,7 +54,7 @@ public class Registration_Doctor extends AppCompatActivity implements AdapterVie
         //spinner (list of hospital)
         Spinner spinner = findViewById(R.id.rd_currentorg);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(Registration_Doctor.this,
-                R.array.hospitals, android.R.layout.simple_spinner_item);
+                R.array.hospitals, R.layout.spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) Registration_Doctor.this);
@@ -106,18 +106,24 @@ public class Registration_Doctor extends AppCompatActivity implements AdapterVie
 
         newdegree = new EditText(Registration_Doctor.this);
         newdegree.setHint("Degree");
+        newdegree.setTextSize(13);
+        newdegree.setTextColor(getResources().getColor(R.color.darkgray3));
         newdegree.setPadding(40,30,40,30);
         newdegree.setBackgroundColor(Color.parseColor("#e5e5e5"));
         newdegree.setLayoutParams(layoutmargin);
 
         newinstitute = new EditText(Registration_Doctor.this);
         newinstitute.setHint("Name of the institute");
+        newinstitute.setTextSize(13);
+        newinstitute.setTextColor(getResources().getColor(R.color.darkgray3));
         newinstitute.setPadding(40,30,40,30);
         newinstitute.setBackgroundColor(Color.parseColor("#e5e5e5"));
         newinstitute.setLayoutParams(layoutmargin2);
 
         newcountry = new EditText(Registration_Doctor.this);
         newcountry.setHint("Country");
+        newcountry.setTextSize(13);
+        newcountry.setTextColor(getResources().getColor(R.color.darkgray3));
         newcountry.setPadding(40,30,40,30);
         newcountry.setBackgroundColor(Color.parseColor("#e5e5e5"));
         newcountry.setLayoutParams(layoutmargin2);
@@ -136,24 +142,32 @@ public class Registration_Doctor extends AppCompatActivity implements AdapterVie
 
         newposition = new EditText(Registration_Doctor.this);
         newposition.setHint("Position");
+        newposition.setTextSize(13);
+        newposition.setTextColor(getResources().getColor(R.color.darkgray3));
         newposition.setPadding(40,30,40,30);
         newposition.setBackgroundColor(Color.parseColor("#e5e5e5"));
         newposition.setLayoutParams(layoutmargin3);
 
         neworganization = new EditText(Registration_Doctor.this);
         neworganization.setHint("Name of the organization");
+        neworganization.setTextSize(13);
+        neworganization.setTextColor(getResources().getColor(R.color.darkgray3));
         neworganization.setPadding(40,30,40,30);
         neworganization.setBackgroundColor(Color.parseColor("#e5e5e5"));
         neworganization.setLayoutParams(layoutmargin4);
 
         newcity = new EditText(Registration_Doctor.this);
         newcity.setHint("City");
+        newcity.setTextSize(13);
+        newcity.setTextColor(getResources().getColor(R.color.darkgray3));
         newcity.setPadding(40,30,40,30);
         newcity.setBackgroundColor(Color.parseColor("#e5e5e5"));
         newcity.setLayoutParams(layoutmargin4);
 
         newcountry2 = new EditText(Registration_Doctor.this);
         newcountry2.setHint("Country");
+        newcountry2.setTextSize(13);
+        newcountry2.setTextColor(getResources().getColor(R.color.darkgray3));
         newcountry2.setPadding(40,30,40,30);
         newcountry2.setBackgroundColor(Color.parseColor("#e5e5e5"));
         newcountry2.setLayoutParams(layoutmargin4);

@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -9,7 +14,7 @@
         android:id="@+id/lp_topcover"
         android:background="@color/orange"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="40dp"
         app:layout_constraintTop_toTopOf="parent"
         android:orientation="vertical"/>
     <TextView
@@ -17,14 +22,14 @@
         android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:padding="15dp"
+        android:textSize="16sp"
+        android:padding="5dp"
         android:gravity="left|center_vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lp_topcover"
         app:layout_constraintBottom_toBottomOf="@id/lp_topcover"
-        android:drawableStart="@drawable/ic_arrow_back_white_24dp"
+        android:drawableStart="@drawable/ic_arrow_back_white_20dp"
         android:drawablePadding="25dp"
         android:text="Login"
         android:textAllCaps="false"/>
@@ -39,14 +44,16 @@
         android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lp_topcover"
-        android:textColor="@color/darkgray"
+        android:textColor="@color/darkgray3"
         android:textStyle="bold"
-        android:textSize="17sp"/>
+        android:textSize="14sp"/>
     <EditText
         android:id="@+id/lp_email"
         android:layout_width="0dp"
         android:background="@color/lightgray"
-        android:padding="10dp"
+        android:padding="7dp"
+        android:textSize="13dp"
+        android:textColor="@color/darkgray3"
         app:layout_constraintWidth_default="percent"
         app:layout_constraintWidth_percent="0.9"
         android:layout_height="wrap_content"
@@ -64,21 +71,23 @@
         android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lp_email"
-        android:textColor="@color/darkgray"
+        android:textColor="@color/darkgray3"
         android:textStyle="bold"
-        android:textSize="17sp"/>
+        android:textSize="14sp"/>
     <EditText
         android:id="@+id/lp_password"
         android:layout_width="0dp"
         android:background="@color/lightgray"
-        android:padding="10dp"
+        android:padding="7dp"
         app:layout_constraintWidth_default="percent"
         app:layout_constraintWidth_percent="0.9"
+        android:textSize="13dp"
+        android:textColor="@color/darkgray3"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lp_text2"
-        android:text="" android:inputType="text" />
+        android:text="" android:inputType="textPassword" />
     <Button
         android:id="@+id/lp_login_btn"
         android:stateListAnimator="@null"
@@ -88,8 +97,8 @@
         android:layout_width="0dp"
         app:layout_constraintWidth_default="percent"
         app:layout_constraintWidth_percent="0.85"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_height="35dp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lp_password"
@@ -99,10 +108,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forget password?"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lp_login_btn"
         android:textColor="@color/orange"
-        android:textSize="17sp"/>
+        android:textSize="12sp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
