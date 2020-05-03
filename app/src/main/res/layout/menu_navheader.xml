@@ -12,7 +12,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/orange"
+        android:background="@color/darkred"
         android:orientation="horizontal" />
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/menu_profilepic"
