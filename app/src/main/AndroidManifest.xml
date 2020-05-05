@@ -9,19 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Appointment_patient_main"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Edit_PatientProfile" />
+        <activity android:name=".Appointment_patient_main" />
         <activity
-            android:name=".MainActivity" />
+            android:name=".Homepage_doctor"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Homepage_patient"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Appointment_doctor_main" />
+        <activity android:name=".Edit_DoctorProfile" />
         <activity android:name=".FindDoctor_main" />
         <activity android:name=".DoctorReview_main" />
         <activity android:name=".Registration_Doctor" />
         <activity android:name=".AppointmentRequest" />
-        <activity android:name=".Homepage_doctor"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Appointment_doctor_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/upp_topbar"
+            android:background="@color/darkred"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"/>
+        <ImageView
+            android:id="@+id/upp_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_back_white_20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/upp_topline"
+            app:layout_constraintBottom_toBottomOf="@id/upp_topline"/>
+        <TextView
+            android:id="@+id/upp_topline"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:gravity="left|center_vertical"
+            app:layout_constraintStart_toEndOf="@id/upp_back"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/upp_topbar"
+            android:text="Account Setting"
+            android:textAllCaps="false"/>
+        <LinearLayout
+            android:id="@+id/upp_topcover"
+            android:background="@color/darkred"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/upp_topbar"
+            app:layout_constraintBottom_toBottomOf="@id/upp_updatepic"
+            android:orientation="vertical"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/upp_profilepic"
+            android:padding="7dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_topbar"
+            android:src="@drawable/patient" />
+        <TextView
+            android:id="@+id/upp_updatepic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:text="Update profile picture"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_profilepic"
+            android:textColor="@color/white"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/upp_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:paddingLeft="20dp"
+            android:paddingBottom="3dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_topcover"
+            android:textColor="@color/darkgray3"
+            android:textStyle="bold"
+            android:textSize="13sp"/>
+        <EditText
+            android:id="@+id/upp_name"
+            android:layout_width="0dp"
+            android:background="@color/lightgray"
+            android:padding="7dp"
+            android:textSize="13dp"
+            android:hint="Shaira Tabassum"
+            android:textColor="@color/darkgray3"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_text1"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/upp_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile No."
+            android:paddingLeft="20dp"
+            android:paddingBottom="3dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_name"
+            android:textColor="@color/darkgray3"
+            android:textStyle="bold"
+            android:textSize="13sp"/>
+        <EditText
+            android:id="@+id/upp_mobile"
+            android:layout_width="0dp"
+            android:background="@color/lightgray"
+            android:padding="7dp"
+            android:textSize="13dp"
+            android:hint="+8801711111111"
+            android:textColor="@color/darkgray3"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_text2"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/upp_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:paddingLeft="20dp"
+            android:paddingBottom="3dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_mobile"
+            android:textColor="@color/darkgray3"
+            android:textStyle="bold"
+            android:textSize="13sp"/>
+        <Spinner
+            android:id="@+id/upp_gender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/lightgray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_text3" />
+
+        <TextView
+            android:id="@+id/upp_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:paddingLeft="20dp"
+            android:paddingBottom="3dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_gender"
+            android:textColor="@color/darkgray3"
+            android:textStyle="bold"
+            android:textSize="13sp"/>
+        <EditText
+            android:id="@+id/upp_age"
+            android:layout_width="0dp"
+            android:background="@color/lightgray"
+            android:padding="7dp"
+            android:textSize="13dp"
+            android:hint="24"
+            android:textColor="@color/darkgray3"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_text4"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/upp_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:paddingLeft="20dp"
+            android:paddingBottom="3dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_age"
+            android:textColor="@color/darkgray3"
+            android:textStyle="bold"
+            android:textSize="13sp"/>
+        <EditText
+            android:id="@+id/upp_height"
+            android:layout_width="0dp"
+            android:background="@color/lightgray"
+            android:padding="7dp"
+            android:textSize="13dp"
+            android:hint="1.57m"
+            android:textColor="@color/darkgray3"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_text5"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/upp_text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:paddingLeft="20dp"
+            android:paddingBottom="3dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_height"
+            android:textColor="@color/darkgray3"
+            android:textStyle="bold"
+            android:textSize="13sp"/>
+        <EditText
+            android:id="@+id/upp_weight"
+            android:layout_width="0dp"
+            android:background="@color/lightgray"
+            android:padding="7dp"
+            android:textSize="13dp"
+            android:textColor="@color/darkgray3"
+            android:hint="45 KG"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_text6"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/upp_text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Group"
+            android:paddingLeft="20dp"
+            android:paddingBottom="3dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_weight"
+            android:textColor="@color/darkgray3"
+            android:textStyle="bold"
+            android:textSize="13sp"/>
+        <Spinner
+            android:id="@+id/upp_bloodgroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/lightgray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_text7" />
+
+        <Button
+            android:id="@+id/upp_save_btn"
+            android:stateListAnimator="@null"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@color/darkred"
+            android:layout_margin="20dp"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_height="35dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/upp_bloodgroup"
+            android:text="Save Changes"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            app:layout_constraintTop_toBottomOf="@id/upp_save_btn"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

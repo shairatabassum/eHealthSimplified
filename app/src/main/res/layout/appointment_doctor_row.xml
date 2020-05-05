@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -15,6 +16,7 @@
         app:layout_constraintEnd_toStartOf="@id/ad_infolayout"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/ad_line"/>
+
     <LinearLayout
         android:id="@+id/ad_infolayout"
         android:layout_width="wrap_content"
@@ -22,42 +24,58 @@
         android:orientation="vertical"
         app:layout_constraintStart_toEndOf="@id/ad_profilepic"
         app:layout_constraintTop_toTopOf="parent">
+
         <TextView
             android:id="@+id/ad_patientname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Rahima Begum"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/ad_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Time: 4:00 PM - 4:30 PM"
             android:textColor="@color/black"
-            android:textSize="11sp"/>
+            android:textSize="11sp" />
+
         <TextView
             android:id="@+id/ad_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Date: 24 April, 2020"
             android:textColor="@color/black"
-            android:textSize="11sp"/>
+            android:textSize="11sp" />
+
         <TextView
             android:id="@+id/ad_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mobile: +8801711111111"
             android:textColor="@color/black"
-            android:textSize="11sp"/>
+            android:textSize="11sp" />
+
         <TextView
             android:id="@+id/ad_payment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Payment Status: Paid"
             android:textColor="@color/black"
-            android:textSize="11sp"/>
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/ap_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:drawableStart="@drawable/ic_cancel_red_20dp"
+            android:paddingTop="5dp"
+            android:text="Cancel Appointment"
+            android:textColor="#FF0000"
+            android:textSize="11sp" />
     </LinearLayout>
     <TextView
         android:id="@+id/ad_status"
