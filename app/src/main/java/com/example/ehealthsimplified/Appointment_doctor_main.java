@@ -24,4 +24,12 @@ public class Appointment_doctor_main extends AppCompatActivity {
         String[] statuslist = {"Completed", "Pending", "Unreachable", "Pending", "Pending"};
         doctorappointmentlist.setAdapter(new Appointment_doctor_adapter(patientnamelist, timelist, datelist, phonelist, paymentlist, statuslist));
     }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
+    public void page_goback(View v) {
+        finish();
+    }
 }

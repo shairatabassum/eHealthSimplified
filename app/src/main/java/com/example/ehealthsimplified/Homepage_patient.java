@@ -1,6 +1,7 @@
 package com.example.ehealthsimplified;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;

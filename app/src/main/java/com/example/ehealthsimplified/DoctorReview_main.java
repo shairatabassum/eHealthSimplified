@@ -53,4 +53,12 @@ public class DoctorReview_main extends AppCompatActivity {
                 .create();
         alertDialog.show();
     }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
+    public void page_goback(View v) {
+        finish();
+    }
 }

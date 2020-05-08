@@ -109,4 +109,12 @@ public class FindDoctor_main extends AppCompatActivity implements AdapterView.On
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
     }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
+    public void page_goback(View v) {
+        finish();
+    }
 }
